@@ -4,17 +4,14 @@ public class App {
     
     public static void main(String[] args) {
 
-        /* Instanziierung Klasse --> Objekt */
-        // Cat -- Referenztyp
-        // cat -- Referenzvariable
-
-        Cat cat1 = new Cat();
+        // Instanziierung mit custom constructor
+        Cat cat1 = new Cat("Grizabella", "white", 29);
 
         // Wertzuweisung
         // cat1.firstName = "Grizabella";
-        cat1.changeName("Grizabella");
-        cat1.furColor = "white";
-        cat1.age = 29;
+        // cat1.changeName("Grizabella");
+        // cat1.furColor = "white";
+        // cat1.age = 29;
 
         // Ausgabe
         output(cat1.tellYourName());
@@ -25,11 +22,12 @@ public class App {
 
         output("----------------");
 
-        Cat cat2 = new Cat();
+        Cat cat2 = new Cat("Alonzo", "grey", 31);
 
-        cat2.firstName = "Alonzo";
-        cat2.furColor = "grey";
-        cat2.age = 31;
+        // cat2.firstName = "Alonzo";
+        // cat2.changeName("Alonzo");
+        // cat2.furColor = "grey";
+        // cat2.age = 31;
 
         output(cat2.tellYourName());
         output(cat2.furColor);

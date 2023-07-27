@@ -13,7 +13,15 @@ public class Cat {
     }
 
 public String getFirstName() {
+    if (getPremission()) {
     return firstName;
+    } else {
+        return "Sorry, no permission!";
+    }
+}
+
+private boolean getPremission() {
+    return false;
 }
 
 public void setFirstName(String firstName) {

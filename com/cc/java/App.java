@@ -7,38 +7,27 @@ public class App {
         // Instanziierung mit custom constructor
         Cat cat1 = new Cat("Grizabella", "white", 29);
 
-        // Wertzuweisung
-        // cat1.firstName = "Grizabella";
-        // cat1.changeName("Grizabella");
-        // cat1.furColor = "white";
-        // cat1.age = 29;
 
-        // Ausgabe
-        output(cat1.tellYourName());
-        output(cat1.furColor);
+        // Ausgabe über Getter
+        output(cat1.getFirstName());
+        output(cat1.getFurColor());
+        output(Integer.toString(cat1.getAge()));
 
-        // Typkonvertierung int --> String
-        output(Integer.toString(cat1.age));
 
         output("----------------");
 
         Cat cat2 = new Cat("Alonzo", "grey", 31);
 
-        // cat2.firstName = "Alonzo";
-        // cat2.changeName("Alonzo");
-        // cat2.furColor = "grey";
-        // cat2.age = 31;
-
-        output(cat2.tellYourName());
-        output(cat2.furColor);
-        // Typkonvertierung int --> value
-        output(String.valueOf(cat2.age));
+        // Ausgabe über Getter
+        output(cat2.getFirstName());
+        output(cat2.getFurColor());
+        output(String.valueOf(cat2.getAge()));
 
     }
 
-        public static void output(String outputData) {
-            System.out.println(outputData);
-        }
+    public static void output(String outputData) {
+        System.out.println(outputData);
+       }
      
 
 
